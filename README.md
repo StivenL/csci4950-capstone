@@ -1,7 +1,7 @@
 CSCI4950-Capstone
 ==============================
 
-MTSU Capstone project
+MTSU Capstone project (gonna be a big ass readme)
 
 Project Organization
 ------------
