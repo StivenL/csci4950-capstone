@@ -1,57 +1,24 @@
-CSCI4950-Capstone
-==============================
+## CSCI4950-Capstone
+***
 
-MTSU Capstone project (gonna be a big ass readme)
+### Business Problem
+Old Time Pottery doesn't have many state-of-the-art technologies compared to many other name-brand retail companies, especially when it comes to inventory and allocation planning. For the most part, the primary tools that are used for this department are Excel spreadsheets and domain knowledge, two fairly volatile metrics. Excel has limitations when it comes to working with the hundreds of thousands of active SKUs within the company, and any employee could leave the company as soon as they win the lottery. Therefore, implementing a machine learning solution that utilizes previous sales information to predict the number of units that need to be sent to a specific store by SKU would be ideal as both a time and cost saver.
 
-Project Organization
-------------
+### Models Used
+Two models, one simpler and one more complex, were used and compared against each other in order to determine which was the best fit for this problem;
+- Multiple Linear Regression:
+    - With this problem having mulitple predictors, this model seemed like the best general fit as a simple, baseline metric
+- XGBoost:
+    - With this model being an industry standard, it seemed like the best fit as a more complex model
 
-    ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
-    ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
-    │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
-    │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+### Model Performance
+AHHHHHHHHHHH (i'm lazy so this will be finished later)
 
 
---------
+how do i wanna split this up
 
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+1. ~~talk about the nature of my problem, why im doing it in the first place and what i hope to achieve~~
+2. bring up the two models i used i guess??? mlr and xgb
+3. discuss how the mlr model performed (rmse and r2) and how xgb performed (rmse r2)
+4. explain the cons for both cause they both have some
+5. i guesss finally which one i would choose to apply within the business
