@@ -1,4 +1,4 @@
-## CSCI4950-Capstone
+## DATA4950-Capstone
 ***
 
 ### Business Problem
@@ -12,13 +12,28 @@ Two models, one simpler and one more complex, were used and compared against eac
     - With this model being an industry standard, it seemed like the best fit as a more complex model
 
 ### Model Performance
-AHHHHHHHHHHH (i'm lazy so this will be finished later)
+| Metrics | Multiple Linear Regression | XGBoost |
+|:-------:|:--------------------------:|:-------:|
+| **Time** | 190ms                      | 7.06s   |
+| **RMSE** | 1.375                      | 0.449   |
+| **$R^2$**| 0.698 // 69.8%             | 0.968 // 96.8% |
 
+### Performance Metrics
+- XGBoost:
+    - Looking at accuracy and error alone, XGBoost is a clear winner in that regard. With an RMSE of 0.449 and an $R^2$ of 0.968, we can expect a +/- 0.449 unit deviation, and we're ~97% accuracte at predicting how many units we would need to purchase. This model performs exceptionally, however its biggest drawback is the runtime, at a whopping 7.06 seconds.
 
-how do i wanna split this up
+- Multiple Linear Regression:
+    - This model performed well despite how simple it is. With an RMSE of 1.375 and an $R^2$ of 0.698, we can expect a +/- 1.375 unit deviation, and we're ~70% accuracte at predicting how many units we would need to purchase. Unlike XGBoost, MLR was an incredibly fast model to run at 190ms, making it ~35x faster than XGBoost.
 
-1. ~~talk about the nature of my problem, why im doing it in the first place and what i hope to achieve~~
-2. bring up the two models i used i guess??? mlr and xgb
-3. discuss how the mlr model performed (rmse and r2) and how xgb performed (rmse r2)
-4. explain the cons for both cause they both have some
-5. i guesss finally which one i would choose to apply within the business
+### Pros and Cons:
+- Multiple Linear Regression:
+    - &#43; Very fast and time efficient
+    - &#43; Minimal setup
+    - &#8722; Lower scores compared to XGBoost
+- XGBoost:
+    - &#43; Very accuracte scores
+    - &#8722; Much slower than MLR
+    - &#8722; More of a black box compared to MLR
+
+### Final Choice:
+- Despite XGBoost having a very comendable perfromance, I would choose to implement a **Multiple Linear Regression model** for this problem. With the Inventory and Allocation team at Old Time Pottery ordering SKUs on a case level, rather than on a unit level, although Multiple Linear Regression is less accuracte compared to XGBoost, it's speed and efficiency is much preferred, especially with the thousands of SKUs within Old Time Pottery's database.
